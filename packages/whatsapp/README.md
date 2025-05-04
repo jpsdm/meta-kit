@@ -1,0 +1,87 @@
+<p align="center">
+  <img src="https://github.com/jpsdm/whatsapp-client/blob/master/.github/image/brand.png?raw=true" alt="Logo da Minha Empresa" width="250">
+</p>
+
+A flexible and easy-to-use Node.js module for sending messages via the WhatsApp Business API. This module provides builders for different message types, such as text, image, and template messages, and allows easy integration with the WhatsApp Business API.
+
+## Features
+
+- [x] Send message
+- [x] Build a Text message
+- [x] Build a Image message
+- [x] Build a Template message
+- [x] Build a Voice message
+- [ ] Build a Interactive message
+- [ ] Webhook Gateway
+- [ ] Phone number utils
+- [ ] Get list of templates
+
+## Installation
+
+You can install the module from npm:
+
+```bash
+npm install whatsapp-client
+```
+
+## Setup
+
+First, import the necessary classes and types into your application:
+
+```ts
+import {
+  WhatsAppHttpClient,
+  SendMessage,
+  TextMessageBuilder,
+} from 'whatsapp-client';
+```
+
+## Methods
+
+The `sendMessage()` method takes a `MessageAny` object and sends it to the recipient.
+
+### 1. **Message Builders**
+
+To send a message, you can use specific builders based on the type of message. Here are examples for text, image, and template messages.
+
+### Example: Sending a Text Message
+
+```ts
+const client = new WhatsAppHttpClient({
+  token: 'YOUR_WHATSAPP_TOKEN',
+  baseURL: 'https://graph.facebook.com/v22.0/YOUR_PHONE_ID',
+});
+
+const sendMessageUseCase = new SendMessage(client);
+
+const message = new TextMessageBuilder()
+  .setRecipient('5511999999999')
+  .setText('Hello World')
+  .build();
+
+sendMessageUseCase
+  .execute(message)
+  .then(() => console.log('Success send message!'))
+  .catch((error) => console.error('Error', error));
+```
+
+- **SendMessage**: Create a instance to send a message.
+- **TextMessageBuilder**: Builds a `Message` of type `text`.
+
+## Example Project
+
+For a practical demonstration, check out the example folder:
+
+- `/examples/send-simple-message`: A basic example to send a simple text message.
+
+## Authors
+
+- [@jpsdm](https://www.github.com/jpsdm)
+
+## Disclaimer
+
+This package is not affiliated with Meta Platforms in any way. It is an open-source project developed by and for the community. WhatsApp is a registered trademark of Meta Platforms. This package is not endorsed, sponsored, or officially connected with Meta Platforms. All copyrights, trademarks, logos, and service marks are the property of their respective owners.
+
+## License
+
+[MIT](https://github.com/jpsdm/whatsapp-client/blob/master/LICENSE)

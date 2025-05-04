@@ -1,0 +1,51 @@
+{
+  "name": "@meta-kit/whatsapp",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "whatsapp",
+    "api",
+    "client",
+    "business",
+    "whatsapp-api",
+    "node",
+    "nodejs",
+    "javascript",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpsdm/whatsapp-client.git"
+  },
+  "author": "João Pedro Soares",
+  "license": "MIT",
+  "description": "A flexible and easy-to-use Node.js module for sending messages via the WhatsApp Business API. This module provides builders for different message types, such as text, image, and template messages, and allows easy integration with the WhatsApp Business API.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.26.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}

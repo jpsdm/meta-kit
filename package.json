@@ -1,0 +1,17 @@
+{
+  "name": "meta-kit",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:whatsapp",
+    "build:whatsapp": "cd packages/whatsapp && npm run build",
+    "release": "changeset publish",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.2",
+    "typescript": "^5.8.3"
+  }
+}
