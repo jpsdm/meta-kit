@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/jpsdm/meta-kit/blob/master/.github/image/meta-kit-brand.png?raw=true" alt="Meta Kit" width="250">
+</p>
+
 # Meta Kit
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
