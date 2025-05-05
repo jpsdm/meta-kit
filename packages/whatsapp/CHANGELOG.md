@@ -1,5 +1,11 @@
 # @meta-kit/whatsapp
 
+## 0.0.4
+
+### Patch Changes
+
+- release v0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

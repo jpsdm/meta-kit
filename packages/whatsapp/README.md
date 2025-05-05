@@ -68,7 +68,7 @@ sendMessageUseCase
 
 For a practical demonstration, check out the example folder:
 
-- `/examples/send-simple-message`: A basic example to send a simple text message.
+- [`/examples`](https://github.com/jpsdm/meta-kit/blob/master/packages/whatsapp/examples): Contains example implementations for sending messages.
 
 ## Authors
 
