@@ -10,7 +10,7 @@ const config: Config = {
       statements: 80,
     },
   },
-  collectCoverage: true,
+  passWithNoTests: true,
 };
 
 export default config;

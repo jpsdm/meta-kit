@@ -1,6 +1,7 @@
 {
   "name": "meta-kit",
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -12,14 +13,35 @@
     "version": "changeset version",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
     "concurrently": "^9.1.2",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
     "ts-jest": "^29.3.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier --write",
+      "jest"
+    ],
+    "**/*.{html,json,css,scss,md,mdx}": [
+      "prettier -w"
+    ]
   }
 }
