@@ -1,7 +1,3 @@
-Here is your CONTRIBUTING.md translated into English, with some minor adjustments for clarity and international open-source standards:
-
----
-
 # Contributing to Meta Kit
 
 Thank you so much for considering contributing to this project! 🎉  
@@ -114,5 +110,3 @@ You can contribute in several ways, including:
 
 All contributions will be recognized in the project's contributors section.  
 Feel free to add your name when opening a PR!
-
----
