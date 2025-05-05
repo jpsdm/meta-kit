@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/jpsdm/whatsapp-client/blob/master/.github/image/brand.png?raw=true" alt="Logo da Minha Empresa" width="250">
+  <img src="https://github.com/jpsdm/meta-kit/blob/master/.github/image/whatsapp-brand.png?raw=true" alt="Whatsapp Meta Kit" width="250">
 </p>
 
 A flexible and easy-to-use Node.js module for sending messages via the WhatsApp Business API. This module provides builders for different message types, such as text, image, and template messages, and allows easy integration with the WhatsApp Business API.
@@ -9,8 +9,8 @@ A flexible and easy-to-use Node.js module for sending messages via the WhatsApp 
 - [x] Send message
 - [x] Build a Text message
 - [x] Build a Image message
-- [x] Build a Template message
-- [x] Build a Voice message
+- [ ] Build a Template message
+- [ ] Build a Voice message
 - [ ] Build a Interactive message
 - [ ] Webhook Gateway
 - [ ] Phone number utils
@@ -21,7 +21,7 @@ A flexible and easy-to-use Node.js module for sending messages via the WhatsApp 
 You can install the module from npm:
 
 ```bash
-npm install whatsapp-client
+npm install @meta-kit/whatsapp
 ```
 
 ## Setup
@@ -29,11 +29,7 @@ npm install whatsapp-client
 First, import the necessary classes and types into your application:
 
 ```ts
-import {
-  WhatsAppHttpClient,
-  SendMessage,
-  TextMessageBuilder,
-} from 'whatsapp-client';
+import { Client, SendMessage, TextMessageBuilder } from '@meta-kit/whatsapp';
 ```
 
 ## Methods
@@ -47,7 +43,7 @@ To send a message, you can use specific builders based on the type of message. H
 ### Example: Sending a Text Message
 
 ```ts
-const client = new WhatsAppHttpClient({
+const client = new Client({
   token: 'YOUR_WHATSAPP_TOKEN',
   baseURL: 'https://graph.facebook.com/v22.0/YOUR_PHONE_ID',
 });
@@ -84,4 +80,4 @@ This package is not affiliated with Meta Platforms in any way. It is an open-sou
 
 ## License
 
-[MIT](https://github.com/jpsdm/whatsapp-client/blob/master/LICENSE)
+[MIT](https://github.com/jpsdm/meta-kit/blob/master/packages/whatsapp/LICENSE)

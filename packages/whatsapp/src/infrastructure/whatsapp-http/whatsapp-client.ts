@@ -3,15 +3,15 @@ import { AnyMessage } from '@/domain/entities/message.entity';
 import { FetchHttpClient } from '@/shared/http/fetch-http-client';
 import { HttpClient } from '@/shared/http/http-client.interface';
 
-interface WhatsAppHttpClientConfig {
+interface ClientConfig {
   token: string;
   baseURL: string;
 }
 
-export class WhatsAppHttpClient implements WhatsAppClient {
+export class Client implements WhatsAppClient {
   private httpClient: HttpClient = new FetchHttpClient();
 
-  constructor(private config: WhatsAppHttpClientConfig) {}
+  constructor(private config: ClientConfig) {}
 
   async sendMessage(message: AnyMessage): Promise<void> {
     const { status, data } = await this.httpClient.request({
@@ -25,7 +25,7 @@ export class WhatsAppHttpClient implements WhatsAppClient {
 
     if (status >= 400) {
       throw new Error(
-        `Erro ao enviar mensagem: ${status} - ${JSON.stringify(data)}`,
+        `Error to send message: ${status} - ${JSON.stringify(data)}`,
       );
     }
   }

@@ -6,11 +6,11 @@ import {
   HttpRequest,
   HttpResponse,
 } from '@/shared/http/http-client.interface';
-import { WhatsAppHttpClient } from '../whatsapp-client';
+import { Client } from '../whatsapp-client';
 
 describe('WhatsAppHttpClient', () => {
   let mockHttpClient: HttpClient;
-  let client: WhatsAppHttpClient;
+  let client: Client;
 
   const config = {
     token: 'fake-token',
@@ -32,7 +32,7 @@ describe('WhatsAppHttpClient', () => {
       request: jest.fn<Promise<HttpResponse>, [HttpRequest]>(),
     };
 
-    client = new WhatsAppHttpClient(config);
+    client = new Client(config);
     client['httpClient'] = mockHttpClient;
   });
 
@@ -61,7 +61,7 @@ describe('WhatsAppHttpClient', () => {
     });
 
     await expect(client.sendMessage(message)).rejects.toThrowError(
-      /Erro ao enviar mensagem: 403/,
+      /Error to send message: 403/,
     );
   });
 });
