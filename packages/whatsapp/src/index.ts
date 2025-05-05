@@ -1,5 +1,6 @@
 export { ImageMessageBuilder } from './builders/image-message.builder';
 export { MessageBuilder } from './builders/message-builder.interface';
+export { TemplateMessageBuilder } from './builders/template-message.builder';
 export { TextMessageBuilder } from './builders/text-message.builder';
 
 export { Client } from './infrastructure/whatsapp-http/whatsapp-client';

@@ -9,7 +9,7 @@ A flexible and easy-to-use Node.js module for sending messages via the WhatsApp 
 - [x] Send message
 - [x] Build a Text message
 - [x] Build a Image message
-- [ ] Build a Template message
+- [x] Build a Template message
 - [ ] Build a Voice message
 - [ ] Build a Interactive message
 - [ ] Webhook Gateway
