@@ -3,4 +3,5 @@ export enum MessageType {
   IMAGE = 'image',
   TEMPLATE = 'template',
   AUDIO = 'audio',
+  INTERACTIVE = 'interactive'
 }

@@ -1,5 +1,11 @@
 # @meta-kit/whatsapp
 
+## 0.1.0
+
+### Minor Changes
+
+- Implemented Audio and Interactive messages buildes
+
 ## 0.0.4
 
 ### Patch Changes
