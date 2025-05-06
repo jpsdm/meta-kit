@@ -1,4 +1,4 @@
-import { Client, ImageMessageBuilder, SendMessage } from 'whatsapp-client';
+import { Client, ImageMessageBuilder, SendMessage } from '@meta-kit/whatsapp';
 
 import dotenv from 'dotenv';
 

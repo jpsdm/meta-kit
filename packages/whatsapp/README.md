@@ -10,11 +10,12 @@ A flexible and easy-to-use Node.js module for sending messages via the WhatsApp 
 - [x] Build a Text message
 - [x] Build a Image message
 - [x] Build a Template message
-- [ ] Build a Voice message
-- [ ] Build a Interactive message
+- [x] Build a Audio message
+- [x] Build a Interactive message
 - [ ] Webhook Gateway
 - [ ] Phone number utils
 - [ ] Get list of templates
+- [ ] Media upload service
 
 ## Installation
 

@@ -1,4 +1,4 @@
-import { Client, SendMessage, TextMessageBuilder } from '@meta-kit/whatsapp';
+import { AudioMessageBuilder, Client, SendMessage } from '@meta-kit/whatsapp';
 
 import dotenv from 'dotenv';
 
@@ -11,9 +11,11 @@ const client = new Client({
 
 const sendMessageUseCase = new SendMessage(client);
 
-const message = new TextMessageBuilder()
-  .setRecipient('551100001111')
-  .setText('Hello, this is a test message!')
+const message = new AudioMessageBuilder()
+  .setRecipient('558191967871')
+  .setAudioLink(
+    'https://cdn.pixabay.com/download/audio/2021/08/09/audio_3ce1bb845b.mp3',
+  )
   .build();
 
 sendMessageUseCase
