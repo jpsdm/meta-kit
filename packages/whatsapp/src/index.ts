@@ -1,4 +1,5 @@
 export { ImageMessageBuilder } from './builders/image-message.builder';
+export { InteractiveMessageBuilder } from './builders/interactive-message.builder';
 export { MessageBuilder } from './builders/message-builder.interface';
 export { TemplateMessageBuilder } from './builders/template-message.builder';
 export { TextMessageBuilder } from './builders/text-message.builder';
