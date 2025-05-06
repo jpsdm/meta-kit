@@ -15,6 +15,10 @@ type MessagePayloadMap = {
     };
     components?: any[];
   };
+  [MessageType.AUDIO]: {
+    id?: string;
+    link?: string;
+  };
   [MessageType.INTERACTIVE]: {
     type: 'list' | 'button' | 'location_request_message';
     header?: {
@@ -84,4 +88,5 @@ export type AnyMessage =
   | Message<MessageType.TEXT>
   | Message<MessageType.IMAGE>
   | Message<MessageType.TEMPLATE>
+  | Message<MessageType.AUDIO>
   | Message<MessageType.INTERACTIVE>;

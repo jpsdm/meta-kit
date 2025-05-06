@@ -2,5 +2,6 @@ export enum MessageType {
   TEXT = 'text',
   IMAGE = 'image',
   TEMPLATE = 'template',
-  INTERACTIVE = 'interactive',
+  AUDIO = 'audio',
+  INTERACTIVE = 'interactive'
 }
