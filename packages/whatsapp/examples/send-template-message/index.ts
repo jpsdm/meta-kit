@@ -1,4 +1,8 @@
-import { Client, SendMessage, TemplateMessageBuilder } from 'whatsapp-client';
+import {
+  Client,
+  SendMessage,
+  TemplateMessageBuilder,
+} from '@meta-kit/whatsapp';
 
 import dotenv from 'dotenv';
 

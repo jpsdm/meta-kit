@@ -4,7 +4,7 @@
   "main": "index.ts",
   "dependencies": {
     "dotenv": "^16.5.0",
-    "whatsapp-client": "file:../../dist"
+    "@meta-kit/whatsapp": "file:../../dist"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
