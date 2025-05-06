@@ -15,6 +15,10 @@ type MessagePayloadMap = {
     };
     components?: any[];
   };
+  [MessageType.AUDIO]: {
+    id?: string;
+    link?: string;
+  };
 };
 
 export type Message<T extends MessageType = MessageType> = {
@@ -29,4 +33,5 @@ export type Message<T extends MessageType = MessageType> = {
 export type AnyMessage =
   | Message<MessageType.TEXT>
   | Message<MessageType.IMAGE>
-  | Message<MessageType.TEMPLATE>;
+  | Message<MessageType.TEMPLATE>
+  | Message<MessageType.AUDIO>;
