@@ -1,5 +1,11 @@
 # @meta-kit/whatsapp
 
+## 0.1.1
+
+### Patch Changes
+
+- 13c784a: Removed old repository URL
+
 ## 0.1.0
 
 ### Minor Changes
