@@ -1,0 +1,48 @@
+name: Bug Report
+description: Report an unexpected behavior or issue
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Please list the steps to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        - OS: [e.g. Windows 11, Ubuntu 22.04]
+        - Browser/Node.js version: [e.g. Chrome 124, Node.js 20]
+        - Version of the project/package: [e.g. v1.2.0]
